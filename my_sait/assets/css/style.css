@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-size: 22 px;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color:black;
+}
+
+*,
+*:before,
+:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 ;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    width: 100vw;
+    height: 100vh;
+    
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: rgb(0,0,0,0);
+    z-index: -1;
+}
+
+.icon {
+    position: absolute;
+}
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Unkempt';
+    font-size: 18px;
+    margin-left: 80px;
+    
+}
+
+.nav {
+    font-size: 22px;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+    position: relative;
+    
+    color: #fff;
+    text-decoration: none;
+    
+    transition: .2s linear;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+    
+    background-color: #fff;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav_link:hover {
+    color: #d9ce40;
+}
+
+
+.nav_link:hover:after {
+    display: block;
+}
+
+.intro2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-left: 3%;
+ 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.91) 50.34%, rgba(198, 177, 137, 0.25) 100%);
+}
+
+.contanierim {
+    position: absolute;
+    margin-left: auto;
+    height: 100vh;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    border: 60px 
+    
+}
+
+
+.follow {
+    margin: 0 100px;
+    margin-right: 100px; 
+    margin-bottom: 10%;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+.social-icons>li {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+.social-icons a {
+  position: relative;
+  background-color: #eee;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color .3s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .25rem;
+}
+.social-icons a:hover {
+  background-color: #e0e0e0;
+}
+.social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: .65rem;
+  top: .65rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.social-icons .social-icon-vk::before {
+  background-image: url("https://smajlik.ru/wp-content/uploads/2017/12/2.png");
+}
+
+.social-icons .social-icon-in::before {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png");
+}
